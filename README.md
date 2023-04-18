@@ -1,5 +1,4 @@
 ### Hi there 👋
 
 <!--START_SECTION:badges-->
-[![Introduction To Packet Tracer](https://images.credly.com/size/110x110/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png)](https://www.credly.com/badges/46fe3d03-b641-450d-a3b9-7459807ba131 "Introduction To Packet Tracer")
 <!--END_SECTION:badges-->
