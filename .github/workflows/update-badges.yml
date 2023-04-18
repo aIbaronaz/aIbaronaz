@@ -4,20 +4,15 @@ on:
   schedule:
     # Runs at 2am UTC
     - cron: "33 22 * * *"
+    
   workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'     
-        required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags' 
+ 
 jobs:
   update-readme:
     name: Update Readme with badges
     runs-on: ubuntu-latest
     steps:
       - name: Badges - Readme
-        uses: pemtajo/badge-readme@main
+        uses: pemtajo/badge-readme@2.3.0
         with:
           CREDLY_USER: ${{ secrets.CREDLY_USER }}
