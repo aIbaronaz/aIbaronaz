@@ -20,7 +20,7 @@ jobs:
       - name: Badges - Readme
         uses: pemtajo/badge-readme@main
         with:
-          CREDLY_USER: Nazar Bazaranonov
+          CREDLY_USER: ${{ secrets.CREDLY_USER }}
           CREDLY_SORT: RESENT
           BADGE_SIZE: 100
           NUMBER_LAST_BADGES: 24
