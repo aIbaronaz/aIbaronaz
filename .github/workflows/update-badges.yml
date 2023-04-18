@@ -15,4 +15,4 @@ jobs:
       - name: Badges - Readme
         uses: pemtajo/badge-readme@2.3.0
         with:
-          CREDLY_USER: nazar-bazaraninov
+          CREDLY_USER: ${{ secret.CREDLY_USER }}
