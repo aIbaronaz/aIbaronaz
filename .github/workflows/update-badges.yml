@@ -11,17 +11,15 @@ on:
         required: true
         default: 'warning'
       tags:
-        description: 'Test scenario tags'
-
+        description: 'Test scenario tags' 
 jobs:
   update-readme:
     name: Update Readme with badges
     runs-on: ubuntu-latest
     steps:
-    - name: Badges - Readme
-      uses: pemtajo/badge-readme@2.3.0
-      with:
-       CREDLY_USER: Nazar
-       CREDLY_SORT: RESENT
-       
-      
+      - name: Badges - Readme
+        uses: pemtajo/badge-readme@main
+        with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          BADGE_SIZE: 100
+          NUMBER_LAST_BADGES: 24
